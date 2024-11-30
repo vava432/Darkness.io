@@ -1,0 +1,153 @@
+/* Устанавливаем базовый шрифт и убираем отступы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт Arial или sans-serif для замены */
+    margin: 0; /* Убираем отступы у body */
+    padding: 0; /* Убираем внутренние отступы у body */
+    background-color: #1f1f1f; /* Темный фон для тела страницы */
+    color: #E0E0E0; /* Светлый цвет текста для контраста */
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #000000; /* Темный фон для заголовка */
+    color: #E0E0E0; /* Светлый цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+nav ul li {
+    display: inline; /* Отображаем элементы списка в одну строку */
+    margin-right: 15px; /* Отступ между элементами навигации */
+}
+
+/* Ссылки в навигации */
+a {
+    color: #BB86FC; /* Светло-фиолетовый цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Основной контент */
+main {
+    padding: 10px; /* Внутренние отступы для основного контента */
+    color: rgb(151, 151, 151);
+}
+
+/* Стили для футера */
+footer {
+    background-color: #000000; /* Темный фон футера */
+    text-align: center; /* Центрируем текст */
+    padding: 10px 0; /* Внутренние отступы */
+    position: relative; /* Относительное позиционирование */
+    bottom: 0; /* Устанавливаем позицию на ноль снизу */
+    width: 100%; /* Ширина футера - 100% */
+}
+
+
+
+
+
+
+
+
+.info-block {
+    background-color: #000000; /* Темный фон блока */
+    color: #ffffff; /* Белый текст для контраста */
+    padding: 20px; /* Отступы внутри блока */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень для объема */
+    max-width: 400px; /* Максимальная ширина блока */
+    margin: 20px auto; /* Центрирование блока */
+}
+
+.title {
+    font-size: 24px; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ под заголовком */
+}
+
+.description {
+    font-size: 16px; /* Размер текста описания */
+}
+
+
+
+
+
+
+
+  .gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(151, 151, 151);
+    padding: 20px 30px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    background-image: linear-gradient(to right, #222222 10%, #3a3a3a 100%);
+    background-size: 150% auto;
+    
+    transition: .5s;
+  }
+  .gradient-button:hover {
+    background-position: right center;
+  }
+
+
+
+
+  .gradient-button{
+    
+    
+    display: flex; /* Используем Flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+  }
+
+
+  body {
+    /* Определяем градиент фона */
+    background: linear-gradient(to right, #000000, #282828, #000000); /* Переход от одного цвета к другому */
+    /* Задаем высоту и ширину, чтобы градиент заполнил всю страницу */
+    height: 100vh; /* Высота в 100% от видимой области */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+
+
+
+div {
+    
+    
+    width: 100%; /* Ширина контейнера — 100% родителя */
+    max-width: 800px; /* Ограничиваем максимальную ширину */
+    margin: auto; /* Центруем контейнер */
+}
+.box {
+    background-color: #000000; /* Цвет фона контейнера */
+    color: white; /* Цвет текста */
+    padding: 20px; /* Внутренний отступ */
+    flex: 1; /* Каждый контейнер занимает одинаковое пространство */
+    margin: 10px; /* Внешний отступ между контейнерами */
+}
+
+.box {
+    width: 2000px; /* Ширина коробки */
+    height: 100px; /* Высота коробки */
+    
+    border-radius: 25px; /* Радиус округления углов */
+    padding: 10px; /* Внутренние отступы */
+    
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+
+img {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: auto;    /* Автоматическая высота для сохранения пропорций */
+    
+}

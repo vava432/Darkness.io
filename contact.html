@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8"> <!-- Устанавливаем кодировку страницы -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Адаптивный дизайн для мобильных устройств -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS для стилизации -->
+
+    <title>Контакты</title> <!-- Заголовок страницы -->
+
+</head>
+
+<body>
+
+    <header>
+
+        <style>
+            .box {
+                width: 200px;
+                padding: 10px;
+                background-color: #333;
+                /* Изменяем фон на темный цвет */
+                border: 1px solid #ccc;
+                cursor: pointer;
+                margin: 10px 0;
+                color: #fff;
+                /* Задаем цвет текста светлым, чтобы было видно на темном фоне */
+            }
+    
+            .content {
+                display: none;
+                /* Скрываем содержимое по умолчанию */
+                padding: 10px;
+                background-color: #000000;
+                /* Темный фон для содержимого */
+                border: 1px solid #000000;
+                color: #fff;
+                /* Цвет текста для содержимого */
+            }
+        </style>
+
+
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html" class="gradient-button">Главная страница</a></li>
+                <!-- Ссылка на главную страницу -->
+
+                <li><a href="info.html" class="gradient-button">Информация</a></li>
+                <!-- Ссылка на страницу "Информация" -->
+
+                <li><a href="contact.html" class="gradient-button">Контакты</a></li>
+                <!-- Ссылка на страницу "Контакты" -->
+
+                <li><a href="nav.html" class="gradient-button">Новости</a></li> <!-- Ссылка на страницу "Новости" -->
+
+                <li><a href="prav.html" class="gradient-button">Правила</a></li> <!-- Ссылка на страницу "Правила" -->
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        
+
+        <div class="info-block" onclick="toggleContent(this)">
+            <h2>Контакты Тг:</h2>
+            <div class="content">
+                <h2><a href="https://t.me/vizime" class="gradient-button" target="_blank" >Тг:Vizime</a></h2>
+                <!-- Здесь добавляем изображение -->
+                <img src="02.png" alt="Тг создатиля">
+
+
+                <h2><a href="https://t.me/repairSE" class="gradient-button" target="_blank" >Тг:Сервера</a></h2>
+                <img src="03.png" alt="Тг сервер">
+
+                <h2><a href="https://t.me/QWDQDSDA" class="gradient-button" target="_blank" >Тг:vava_dar</a></h2>
+                <img src="04.png" alt="Тг разроботчика">
+            </div>
+        </div>
+
+        <div class="info-block" onclick="toggleContent(this)">
+            <h2>Контакты Дс:</h2>
+            <div class="content">
+                <h3><p>Vizime : vizime</p> </h3>
+                <h3> <p>vava_dar : darkness_holiworld</p></h3>
+                <h2><a href="https://discord.gg/MmCkz95Tbk" class="gradient-button" target="_blank" >Дс:сервер</a></h2>
+            </div>
+        </div>
+
+
+        <script>
+            function toggleContent(box) {
+                const content = box.querySelector('.content');
+                // Переключаем видимость содержимого
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2024 Удачной игры</p> <!-- Подвал страницы с копирайтом -->
+
+    </footer>
+
+</body>
+
+</html>
