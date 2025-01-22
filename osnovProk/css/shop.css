@@ -1,0 +1,368 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    border: none; 
+    outline: none; 
+    background-color:#000000
+}
+
+.glavblok{
+    background-image: url("/img/photo_2025-01-07_21-29-27.jpg");
+    background-size: cover;
+    width: 100%;
+	height: 300px;
+    border: none; 
+    outline: none 
+    
+}
+
+/*Первый товар*/
+
+.tovar1 {
+    top: 350px;
+    left: 100px;
+    background-color: #020202; 
+    position: absolute;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 20px;
+    color: rgb(255, 255, 255);  
+    transition: 0.2s linear;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+}
+
+.tovar1:hover{
+    width: 310px; 
+    height: 460px; 
+}
+
+.tovar1 a{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none;  
+    text-decoration: none; 
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 1px 100px; 
+    transition: 0.2s linear;
+}
+
+.tovar1 a:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    top: 340px;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+    padding: 2px 101px;  
+}
+
+.tovar1 .imgblok {
+    width: 250px; 
+    height: 250px; 
+    background-color: #ffffff;
+    position: absolute; 
+    top: 30px;
+    left: 25px;
+    background-image: url("/img/photo_2025-01-13_06-52-05.jpg");
+    background-size: cover;
+    transition: 0.5s linear;
+    border-radius: 20px;
+}
+
+.tovar1 .imgblok:hover{
+    background-color: #414141;
+    background-image: url("/img/photo_2025-01-13_06-51-59.jpg");
+    background-size: cover;
+    width: 260px; 
+    height: 260px;
+    border-radius: 30px; 
+}
+ /*Второй товар*/
+.tovar2 {
+    top: 350px;
+    left: 450px;
+    background-color: #020202; 
+    position: absolute;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 20px;
+    color: rgb(255, 255, 255);  
+    transition: 0.2s linear;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+}
+
+.tovar2:hover{
+    width: 310px; 
+    height: 460px; 
+}
+
+.tovar2 a{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none;  
+    text-decoration: none; 
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 1px 100px; 
+    transition: 0.2s linear;
+}
+
+.tovar2 a:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    top: 340px;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+    padding: 2px 101px;  
+}
+
+.tovar2 .imgblok {
+    width: 250px; 
+    height: 250px; 
+    background-color: #ffffff;
+    position: absolute; 
+    top: 30px;
+    left: 25px;
+    background-image: url("/img/photo_2025-01-13_06-52-05.jpg");
+    background-size: cover;
+    transition: 0.5s linear;
+    border-radius: 20px;
+}
+
+.tovar2 .imgblok:hover{
+    background-color: #414141;
+    background-image: url("/img/photo_2025-01-13_06-51-59.jpg");
+    background-size: cover;
+    width: 260px; 
+    height: 260px;
+    border-radius: 30px; 
+}
+
+
+/*Третий товар*/
+.tovar3 {
+    top: 350px;
+    left: 800px;
+    background-color: #020202; 
+    position: absolute;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 20px;
+    color: rgb(255, 255, 255);  
+    transition: 0.2s linear;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+}
+
+.tovar3:hover{
+    width: 310px; 
+    height: 460px; 
+}
+
+.tovar3 a{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none;  
+    text-decoration: none; 
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 1px 100px; 
+    transition: 0.2s linear;
+}
+
+.tovar3 a:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    top: 340px;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+    padding: 2px 101px;  
+}
+
+.tovar3 .imgblok {
+    width: 250px; 
+    height: 250px; 
+    background-color: #ffffff;
+    position: absolute; 
+    top: 30px;
+    left: 25px;
+    background-image: url("/img/photo_2025-01-13_06-52-05.jpg");
+    background-size: cover;
+    transition: 0.5s linear;
+    border-radius: 20px;
+}
+
+.tovar3 .imgblok:hover{
+    background-color: #414141;
+    background-image: url("/img/photo_2025-01-13_06-51-59.jpg");
+    background-size: cover;
+    width: 260px; 
+    height: 260px;
+    border-radius: 30px; 
+}
+
+
+/*Четвертый товар*/
+.tovar4 {
+    top: 350px;
+    left: 1150px;
+    background-color: #020202; 
+    position: absolute;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 20px;
+    color: rgb(255, 255, 255);  
+    transition: 0.2s linear;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+}
+
+.tovar4:hover{
+    width: 310px; 
+    height: 460px; 
+}
+
+.tovar4 a{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none;  
+    text-decoration: none; 
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 1px 100px; 
+    transition: 0.2s linear;
+}
+
+.tovar4 a:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    top: 340px;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+    padding: 2px 101px;  
+}
+
+.tovar4 .imgblok {
+    width: 250px; 
+    height: 250px; 
+    background-color: #ffffff;
+    position: absolute; 
+    top: 30px;
+    left: 25px;
+    background-image: url("/img/photo_2025-01-13_06-52-05.jpg");
+    background-size: cover;
+    transition: 0.5s linear;
+    border-radius: 20px;
+}
+
+.tovar4 .imgblok:hover{
+    background-color: #414141;
+    background-image: url("/img/photo_2025-01-13_06-51-59.jpg");
+    background-size: cover;
+    width: 260px; 
+    height: 260px;
+    border-radius: 30px; 
+}
+
+
+
+
+/*Пятый товар*/
+.tovar5 {
+    top: 350px;
+    left: 1500px;
+    background-color: #020202; 
+    position: absolute;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 20px;
+    color: rgb(255, 255, 255);  
+    transition: 0.2s linear;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+}
+
+.tovar5:hover{
+    width: 310px; 
+    height: 460px; 
+}
+
+.tovar5 a{
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    border: none;  
+    text-decoration: none; 
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    border-radius: 20px;
+    padding: 1px 100px; 
+    transition: 0.2s linear;
+}
+
+.tovar5 a:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    top: 340px;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: rgb(255, 255, 255);  
+    padding: 2px 101px;  
+}
+
+.tovar5 .imgblok {
+    width: 250px; 
+    height: 250px; 
+    background-color: #ffffff;
+    position: absolute; 
+    top: 30px;
+    left: 25px;
+    background-image: url("/img/photo_2025-01-13_06-52-05.jpg");
+    background-size: cover;
+    transition: 0.5s linear;
+    border-radius: 20px;
+}
+
+.tovar5 .imgblok:hover{
+    background-color: #414141;
+    background-image: url("/img/photo_2025-01-13_06-51-59.jpg");
+    background-size: cover;
+    width: 260px; 
+    height: 260px;
+    border-radius: 30px; 
+}
+
+
+
+
+
+.podval{
+    background-image: url("/img/photo_2025-01-07_21-29-27.jpg");
+    background-size: cover;
+    width: 100%;
+	height: 300px;
+    border: none; 
+    outline: none;
+    position: absolute;
+    top: 1500px;
+    transform: rotate(180deg)
+}
