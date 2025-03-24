@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизация/Регистрация</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <div class="container">
+        <h2>{% if register %}Регистрация{% else %}Авторизация{% endif %}</h2>
+        <form method="post">
+            <input type="text" name="username" placeholder="Ник" required><br>
+            <input type="password" name="password" placeholder="Пороль" required><br>
+            <button type="submit">{% if register %}Регистрация{% else %}Авторизация{% endif %}</button>
+        </form>
+        {% if register == false %}
+        <a href="{{ url_for('register') }}">Регистрация</a>
+        {% endif %}
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

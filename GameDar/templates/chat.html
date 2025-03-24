@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .chat-container { width: 80%; margin: 20px auto; border: 1px solid #ccc; padding: 10px; }
+        .message { margin-bottom: 5px; padding: 5px; border-bottom: 1px solid #eee; }
+        .message .author { font-weight: bold; }
+        .message .timestamp { font-size: smaller; color: #777; }
+        .input-area {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #34495e;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 100px;
+            color: black;
+        }
+        #messages {
+            margin-bottom: 60px;
+            height: calc(100vh - 260px);
+            overflow-y: auto;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+        <div id="messages">
+            {% for message in messages %}
+                <p>
+                    <strong>{{ message[1] }}</strong> {{ message[2] }} ({{ message[3] }})
+                    {% if admin %}
+                        <a href="{{ url_for('delete_message', id=message[0]) }}">Удалить</a>
+                    {% endif %}
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+    <form id="chat-form" class="input-area">
+        <input type="text" id="message-input" placeholder="Введите сообщение">
+        <button type="submit">Отправить</button>
+    </form>
+    {% include 'footer.html' %}
+    <script>
+        const socket = io({ transports: ['websocket', 'polling', 'flashsocket'] });
+        const messagesDiv = document.getElementById('messages');
+        const chatForm = document.getElementById('chat-form');
+        const messageInput = document.getElementById('message-input');
+
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (messageInput.value) {
+                socket.emit('send_message', {message: messageInput.value});
+                messageInput.value = '';
+            }
+        });
+
+        socket.on('new_message', function(data) {
+            const messageElement = document.createElement('p');
+            messageElement.innerHTML = `<strong>${data.username}</strong> ${data.message} (${data.timestamp})`;
+            {% if admin %}
+                messageElement.innerHTML += ` <a href="/delete_message/${data.id}">Удалить</a>`;
+            {% endif %}
+            messagesDiv.appendChild(messageElement);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        });
+
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    </script>
+</div>
+</body>
+</html>

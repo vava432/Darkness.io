@@ -1,0 +1,135 @@
+/* CSS Variables (с добавлением переменных для размеров) */
+:root {
+    --primary-color: #34495e;
+    --secondary-color: rgb(20, 51, 71);
+    --text-color: #444;
+    --bg-color: #f9f9f9;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --input-padding: 10px;
+    --input-border-radius: 5px;
+    --button-font-size: 16px;
+    --button-padding-vertical: 10px;
+    --button-padding-horizontal: 20px;
+    --button-border-radius: 5px;
+}
+
+/* Styles for the "Change Username" button (Стили кнопки) */
+.tip {
+    background-color: var(--primary-color); /* Use primary color (Использовать основной цвет) */
+    color: white; /* White text (Белый текст) */
+    font-size: var(--button-font-size); /* Font size (Размер шрифта) */
+    padding: var(--button-padding-vertical) var(--button-padding-horizontal); /* Padding (Отступы) */
+    border: none; /* No border (Без рамки) */
+    border-radius: var(--button-border-radius); /* Rounded corners (Скругленные углы) */
+    cursor: pointer; /* Change cursor to pointer on hover (Изменение курсора на указатель при наведении) */
+    transition: background-color 0.3s ease; /* Smooth background color transition (Плавный переход цвета фона) */
+}
+
+.tip:hover, .tip:focus {
+    background-color: var(--secondary-color); /* Use secondary color on hover (Использовать вторичный цвет при наведении) */
+}
+
+  
+
+  /* Общие сбросы и базовые стили */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Для прижатия footer к низу */
+}
+
+.content-wrapper {
+    padding: 10px; /* Добавляем отступ в 10px со всех сторон только для контента */
+}
+
+
+
+  /* Шапка сайта */
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Автоматическое добавление отступа сверху */
+    height: 100px;
+}
+
+  /* Ссылки */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover, a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+
+  /* Кнопки */
+  .btn, button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover, button:hover, .btn:focus, button:focus {
+    background-color: var(--secondary-color);
+  }
+
+  /* Поля ввода */
+  input, textarea {
+    padding: var(--input-padding);
+    border: 1px solid #ccc;
+    border-radius: var(--input-border-radius);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  /* Адаптивный дизайн */
+  @media (max-width: 600px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+
+
+  /* Styles for the "Change Username" button (Стили кнопки) */
+.tip {
+    background-color: var(--primary-color); /* Use primary color (Использовать основной цвет) */
+    color: white; /* White text (Белый текст) */
+    font-size: var(--button-font-size); /* Font size (Размер шрифта) */
+    padding: var(--button-padding-vertical) var(--button-padding-horizontal); /* Padding (Отступы) */
+    border: none; /* No border (Без рамки) */
+    border-radius: var(--button-border-radius); /* Rounded corners (Скругленные углы) */
+    cursor: pointer; /* Change cursor to pointer on hover (Изменение курсора на указатель при наведении) */
+    transition: background-color 0.3s ease; /* Smooth background color transition (Плавный переход цвета фона) */
+}
+
+.tip:hover, .tip:focus {
+    background-color: var(--secondary-color); /* Use secondary color on hover (Использовать вторичный цвет при наведении) */
+}

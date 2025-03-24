@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <div class="container">
+        <h1>Привет, {{ username }}!</h1>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Предложения</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <div class="container-pred">
+        <h1>Предложения</h1>
+        <div class="container">
+            <ul>
+                {% for suggestion in suggestions %}
+                    <li>
+                        <strong>Ник:{{ suggestion[1] }}</strong> <h3>Предложения:{{ suggestion[2] }}</h3>  <h3>Контакты:{{ suggestion[3] }}</h3> <h3>Время:{{ suggestion[4] }}</h3>
+                        <a href="{{ url_for('delete_suggestion', id=suggestion[0]) }}">Удалить</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

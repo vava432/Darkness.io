@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Профиль</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <div class="container">
+        <h1> Профиль пользователя</h1>
+        <h2> Личные данные</h2>
+        <p><strong> Имя пользователя:</strong> {{ user.username }}</p>
+        <h3>Изменение пароля</h3>
+        <form action="/change_password" method="post">
+            <label for="current_password">Текущий пароль:</label>
+            <input type="password" id="current_password" name="current_password" required>
+            <br>
+            <label for="new_password">Новый пароль:</label>
+            <input type="password" id="new_password" name="new_password" required>
+            <br>
+            <input type="submit" value="Изменить пароль"class="tip">
+        </form>
+        
+        <h3>Изменение логина</h3>
+        <form action="/change_username" method="post">
+            <label for="new_username">Новое имя пользователя:</label>
+            <input type="text" id="new_username" name="new_username" required>
+            <br>
+            <input type="submit" value="Изменить имя пользователя" class="tip">
+        </form>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

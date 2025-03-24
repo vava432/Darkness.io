@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .tab{
+            border: 3px solid #34495e;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <h1>Список пользователей</h1>
+    <table>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <div class="tab">
+                    <h2>Ник: [{{ user[0] }}]</h2>
+                    <h2>Роль: [{{ 'администратор' if user[1] else 'пользователь' }}]</h2>
+                    <form method="POST" action="/delete_user">
+                        <input type="hidden" name="username" value="{{ user[0] }}">
+                        <button type="submit">Удалить пользователя</button>
+                    </form>
+                </div>
+            </tr>
+            {% endfor %}   
+        </tbody>
+    </table>
+    </div>
+    {% include 'footer.html' %}
+    
+</body>
+</html>

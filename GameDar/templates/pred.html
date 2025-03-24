@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Предложения</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content-wrapper">
+    <div class="container">
+        <form method="post">
+            <textarea name="suggestion" placeholder="Ваше предложение"></textarea><br>
+            <input type="text" name="contact" placeholder="Контакт для связи"><br>
+            <button type="submit">Отправить</button>
+        </form> 
+    </div>     
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

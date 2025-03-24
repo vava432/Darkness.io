@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Добавить администратора</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    
+    <div class="container">
+        <div class="content-wrapper"> 
+            <h1>Добавить администратора</h1>
+            <form method="post">
+                <label for="username">Имя пользователя:</label><br>
+                <input type="text" id="username" name="username" placeholder="Введите имя пользователя"><br><br>
+                <button type="submit">Подтвердить</button>
+            </form>
+            <a class="admin-link" href="{{ url_for('glav') }}">Назад на главную</a>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
